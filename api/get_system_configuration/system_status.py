@@ -1,7 +1,9 @@
-from .connection import get_session
+from api.connection import get_session
 
 def get_system_status(url, cookie):
-
+    """
+    The “getSystemStatus” action will return the system information.
+    """
     session = get_session()
 
     request = {
